@@ -13,7 +13,7 @@ UPLOAD_DIR = "files"
 # 上传成功后拼上文件名返回给前端，前端直接把这个地址存进数据库
 # 下载地址前缀，和后端启动端口保持一致，
 # 上传成功后拼上文件名返回给前端，前端直接把这个地址存进数据库
-DOWNLOAD_PREFIX = "http://127.0.0.1:9090/files/download/"
+DOWNLOAD_PREFIX = "/files/download/"
 
 
 def save(file: UploadFile) -> str:

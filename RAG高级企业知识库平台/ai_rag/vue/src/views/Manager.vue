@@ -3,7 +3,7 @@
     <div class="manager-header">
       <div class="manager-header-left">
         <img src="@/assets/imgs/logo.png" alt="">
-        <div class="title">兔南高级企业知识库RAG平台</div>
+        <div class="title">AIRAG高级企业知识库平台</div>
       </div>
       <div class="manager-header-center">
         <el-breadcrumb separator="/">

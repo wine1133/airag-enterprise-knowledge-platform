@@ -23,6 +23,11 @@ export default defineConfig({
     }),
   ],
   server: {
+    // 开发时把文件下载请求转发到后端，头像和文档链接才能正常显示
+    proxy: {
+      '/files': 'http://localhost:9090',
+    },
+
     // 路由是懒加载的，dev 模式下点一个菜单才现编译对应的 .vue 和它的
     // element-plus 组件样式，每个页面第一次点都要等。warmup 让 dev server
     // 启动后就在后台把这些文件先转译好，点菜单时直接命中缓存。

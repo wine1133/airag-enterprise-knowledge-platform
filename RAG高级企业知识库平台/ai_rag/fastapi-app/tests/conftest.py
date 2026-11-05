@@ -10,6 +10,7 @@
 """
 
 import asyncio
+import os
 import sys
 
 import pytest
@@ -46,7 +47,8 @@ def client():
 @pytest.fixture()
 def admin_headers(client):
     """用初始化数据里的管理员账号登录，返回带 token 的请求头。"""
-    response = client.post("/login", json={"username": "admin", "password": "123456"})
+    admin_password = os.environ.get("TEST_ADMIN_PASSWORD", "AiRag@2026#Kq7m")
+    response = client.post("/login", json={"username": "admin", "password": admin_password})
     body = response.json()
     assert body["code"] == "200", "管理员登录失败，请确认已执行 ai_rag.sql 且密码未被改过"
     return {"token": body["data"]["token"]}

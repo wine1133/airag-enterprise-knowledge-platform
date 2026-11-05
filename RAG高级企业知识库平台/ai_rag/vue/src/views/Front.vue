@@ -3,7 +3,7 @@
     <div class="front-header">
       <div class="front-header-left">
         <img src="@/assets/imgs/logo.png" alt="">
-        <div class="title" @click="router.push('/front/home')">兔南高级企业知识库RAG平台</div>
+        <div class="title" @click="router.push('/front/home')">AIRAG高级企业知识库平台</div>
       </div>
       <div class="front-header-center">
         <el-menu :default-active="router.currentRoute.value.path" router mode="horizontal">

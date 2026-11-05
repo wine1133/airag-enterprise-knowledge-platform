@@ -7,7 +7,7 @@
         <div class="brand-inner">
           <div class="brand-logo">
             <img src="@/assets/imgs/logo.png" alt="">
-            <span>兔南高级企业知识库RAG平台</span>
+            <span>AIRAG高级企业知识库平台</span>
           </div>
           <h1 class="brand-title">让企业知识<br>真正被检索到</h1>
           <p class="brand-desc">从文档解析、混合检索到自动评测，一条 RAG 链路走完。</p>

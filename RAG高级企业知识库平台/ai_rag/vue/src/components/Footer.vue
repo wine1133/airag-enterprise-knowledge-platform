@@ -5,7 +5,7 @@
     <div class="footer-inner">
       <div class="footer-left">
         <img src="@/assets/imgs/logo.png" alt="">
-        <span class="footer-name">兔南高级企业知识库RAG平台</span>
+        <span class="footer-name">AIRAG高级企业知识库平台</span>
         <span class="footer-sep">·</span>
         <span class="footer-org">广联智造股份有限公司</span>
       </div>
